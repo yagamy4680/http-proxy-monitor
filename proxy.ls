@@ -16,7 +16,7 @@ opt = optimist.usage 'Usage: $0'
 
 argv = opt.argv
 if argv.h
-  argv.showHelp!
+  opt.showHelp!
   process.exit 1
 
 
