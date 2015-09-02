@@ -1,0 +1,33 @@
+{
+  "name": "http-proxy-monitor",
+  "author": {
+    "name": [
+      "Yagamy"
+    ],
+    "email": "yagamy@gmail.com"
+  },
+  "description": "A http proxy with data monitor and dump features, for development purposes",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "main": "proxy.ls",
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.4.x"
+  },
+  "dependencies": {
+    "async": "*",
+    "optimist": "*",
+    "colors": "*",
+    "moment": "*",
+    "express": "*",
+    "http-proxy": "*",
+    "sprintf-js": "*",
+    "pretty-data": "*",
+    "prelude-ls": "*"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {}
+}
