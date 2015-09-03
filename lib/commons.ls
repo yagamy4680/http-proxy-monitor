@@ -75,6 +75,7 @@ dump-text = (logger, type, buffer) ->
 
 
 dump-if-applicable = (logger, content-type, buffer) ->
+  return logger.emp "missing content-type in response headers" unless content-type?
   return dump-xml logger, content-type, buffer if 0 <= (content-type.indexOf "soap") or 0 <= (content-type.indexOf "xml")
   return dump-json logger, content-type, buffer if 0 <= (content-type.indexOf "json")
   return dump-text logger, content-type, buffer if 0 <= (content-type.indexOf "text/plain")
